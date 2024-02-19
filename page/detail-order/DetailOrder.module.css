@@ -1,0 +1,36 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+}
+.table {
+  max-height: 400px;
+  overflow: auto;
+}
+@media screen and (max-width: 768px) {
+  .table {
+    max-height: 300px;
+    overflow: auto;
+  }
+
+  .img {
+    height: 50px;
+    width: 50px;
+  }
+}
+.button {
+  border-style: groove;
+  border-width: 2px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  display: inline;
+  cursor: pointer;
+}
+.button a {
+  text-decoration: none;
+  color: black;
+}

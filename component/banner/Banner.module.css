@@ -1,0 +1,33 @@
+.banner {
+  width: 75%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  background-color: #f4f5f9;
+}
+.title1 {
+  font-weight: 500;
+  font-size: 35px;
+  font-style: italic;
+}
+.title2 {
+  font-weight: 500;
+  font-size: 20px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.386);
+}
+
+.title2 a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+.check {
+  color: rgba(0, 0, 0, 0.386) !important;
+}

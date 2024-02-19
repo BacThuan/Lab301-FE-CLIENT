@@ -1,0 +1,185 @@
+.chat {
+  width: 540px;
+  padding: 5px 10px;
+  height: 500px;
+  position: fixed;
+  bottom: 50px;
+  right: 80px;
+  border-style: none;
+  box-shadow: 5px 5px 5px 5px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+}
+.open {
+  border-radius: 50%;
+  padding: 5px;
+  position: fixed;
+  right: 1%;
+  bottom: 20%;
+}
+.content {
+  width: 400px;
+}
+.title p {
+  margin-top: 10px;
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.chatApp {
+  height: 40px;
+  border: none;
+  font-style: italic;
+  margin-top: 5px;
+  background-color: #ddd;
+}
+.message {
+  border-radius: 10px;
+  background: #f1f1f1;
+  height: 370px;
+  overflow: auto;
+}
+
+.customer {
+  font-style: italic;
+  color: white;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.customer div {
+  background-color: rgb(0, 115, 255);
+  padding: 5px 10px;
+  max-width: 300px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.admin {
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.admin div {
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  max-width: 300px;
+}
+
+.container {
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: white;
+  height: 50px;
+  display: flex;
+}
+.container textarea {
+  padding-top: 13px;
+  padding-left: 10px;
+  width: 65%;
+  height: 50px;
+  border: none;
+  background: #f1f1f1;
+}
+.container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.btn {
+  height: 50px;
+  display: block;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.btn svg:hover {
+  fill: blue;
+}
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+/* Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+  .open {
+    bottom: 15%;
+    right: 2%;
+  }
+  .chat {
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .open {
+    bottom: 10%;
+    right: 2%;
+  }
+  .chat {
+    right: 2%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .chat {
+    width: 80%;
+  }
+  .open {
+    bottom: 1%;
+    right: 2%;
+  }
+  .chat {
+    right: 2%;
+  }
+  .content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .chat {
+    width: 98%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .avatar {
+    height: 25px;
+    width: 25px;
+  }
+  .customer {
+    font-size: 13px;
+  }
+
+  .admin {
+    font-size: 13px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .container textarea {
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 13px;
+    width: 60%;
+    height: 50px;
+  }
+
+  .btn {
+    height: 30px;
+    width: 30px;
+    display: block;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}

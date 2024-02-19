@@ -1,0 +1,107 @@
+.container {
+  width: 73%;
+  position: relative;
+}
+.list {
+  padding: 0 0;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  padding-bottom: 40px;
+}
+.list li {
+  flex-basis: 31%;
+  text-align: center;
+}
+
+.search {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.input {
+  height: 35px;
+  padding-left: 10px;
+  width: 250px;
+}
+.list li {
+  animation: scaleAnim 1s forwards;
+}
+@keyframes scaleAnim {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.page {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: black;
+}
+@media screen and (max-width: 1024px) {
+  .list li {
+    flex-basis: 30%;
+    text-align: center;
+  }
+  .search {
+    width: 97%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 76%;
+  }
+
+  .search {
+    width: 90%;
+  }
+  .list {
+    gap: 0;
+  }
+  .list li {
+    flex-basis: 30%;
+    text-align: center;
+  }
+  .page {
+    margin-right: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .search {
+    width: 100%;
+  }
+  .list li {
+    flex-basis: 33.3%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+  .search {
+    width: 100%;
+  }
+  .list li {
+    flex-basis: 50%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 240px) {
+  .search {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 23%;
+  }
+}

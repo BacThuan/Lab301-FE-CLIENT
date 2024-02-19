@@ -1,0 +1,20 @@
+.tr {
+  text-align: center;
+}
+.button {
+  border-style: groove;
+  border-width: 2px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.tr a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .action .button {
+    margin-bottom: 30px;
+  }
+}

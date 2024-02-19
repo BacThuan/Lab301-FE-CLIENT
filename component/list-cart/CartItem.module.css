@@ -1,0 +1,49 @@
+.input {
+  text-align: center;
+  width: 25px;
+  border: none;
+}
+.handle {
+  border: none;
+  background-color: white;
+}
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.tr {
+  text-align: center;
+}
+.name {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.price {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+.trash {
+  cursor: pointer;
+}
+.trash:hover {
+  background-color: rgba(0, 0, 0, 0.266);
+}
+@media screen and (max-width: 480px) {
+  .handle {
+    height: 30px;
+    width: 30px;
+  }
+  .input {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+  }
+  .trash {
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 124, 124, 0.815);
+  }
+}

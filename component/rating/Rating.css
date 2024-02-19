@@ -1,0 +1,38 @@
+.comment_form {
+  width: 75%;
+}
+.input_comment {
+  margin: 10px 0;
+  width: 100%;
+  height: 100px;
+}
+.comment_form button {
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  background-color: rgb(33, 37, 41);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.comment_form button:disabled {
+  background-color: rgb(114, 130, 146);
+}
+.pageComment {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.comment {
+  width: 75%;
+  margin: 10px 0;
+  padding: 15px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 20px;
+}
+.comment_info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}

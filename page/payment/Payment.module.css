@@ -1,0 +1,107 @@
+.container {
+  position: relative;
+  height: 800px;
+}
+
+.img {
+  width: 100%;
+  height: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.card {
+  left: 35.5%;
+  top: 5%;
+  position: absolute;
+  margin: 3rem auto;
+  width: 95%;
+  max-width: 25rem;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+}
+
+.card h1 {
+  text-align: center;
+  color: #494949;
+  font-style: italic;
+  font-size: 30px;
+  margin: 40px 0;
+}
+.bg_vnp {
+  height: 20px;
+  width: 25px;
+  background-image: url("data:image/webp;base64,UklGRnoCAABXRUJQVlA4TG0CAAAvGcAEEFflOJIkNcoWP6Xnkf+2nQckBh8cRpKsKv3d8g8Gi4UA3B3WbSRJipQ99wzSe4Dy++/SW3A4rmrbVpV1zr334e7Wh0EAUhCLP/0jDQHcXc86gMfxaThJnsHEHz/EJQK5QkCAQOEhSEEQUEeECKkjAo+AOJLwEMQVfSFL0UUKCkGAQCBQCAQKhUMcCo+APBwUDnIslqJr+Rb5F4Ik5FeU34FxGldjPw1es98o6/u8PJ16/fuOX1G8dngPTP+N7ndct4dr9T3++8PqO683188SVqo3niQegMFg+OONFwy2oKF2TiOUaoNdJBMxxAIRIpSKCBEiBCIECIQATQS8C4mUzZTtqRJfio3Ruh2Lrby0C59rz3DAFx988cUZD1xwgy10EKc/pXJjsS5ueQwjBAiB4xeBAhBtWzvcfLX9x05tmzOpbTeqmzp1jNq2Ne1rZvQIEf2fAPCcv5y+MQCrc9fjuolbAxsLV2M6tVrzOEvCi0/iUyxejmqNZrtl7XkEADjJ0ZGJXJKlC73OQnzsvf3uvgwDJESF5ZSn8QFg+Vyntfxu2L6/tt2rT0MpESFZlQilCwDO9DojYd3a3LF/7awfdHgHZWMIIZQhgEmd1vT1Yf/7InY+93tbArJViDRTeDeltr19O36dzp/Dnmaf3BpEWQj3M6av921imzjqbvLNq0XU1QAPK4SdsP+cdDX6FQQiaiwOAF6P/1z/p50NfoXBiBpXgOdg/0Bfe71/USiixpVA3tZa51VVFI6ocSVQp5aUFkcgalwBdEVlMYgaVwD9WBUVJgemCowMkwNzaYVHpQzYFOcHBhVJgBoA");
+}
+.vnpay-button {
+  background-color: #30a8da;
+  padding: 10px 0;
+  padding-left: 30%;
+  border-radius: 5px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.vnpay-button button {
+  background-color: #30a8da;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .card {
+    left: 33.5%;
+    top: 3%;
+  }
+}
+/* Ipad dọc(768 x 1024) */
+@media screen and (max-width: 768px) {
+  .container {
+    height: 650px;
+  }
+  .img {
+    height: 650px;
+  }
+
+  .card {
+    left: 26%;
+    top: 3%;
+  }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px) {
+  .card {
+    left: 10%;
+    top: 3%;
+  }
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px) {
+  .card {
+    left: 3%;
+    top: 3%;
+  }
+
+  .vnpay-button {
+    padding-left: 23%;
+  }
+}
+/* Smart phone nhỏ */
+@media screen and (max-width: 240px) {
+  .vnpay-button {
+    padding-left: 10%;
+  }
+}

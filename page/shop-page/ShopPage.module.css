@@ -1,0 +1,51 @@
+.filter {
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .filter {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .filter {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hideFilter {
+    display: none;
+  }
+
+  .openFilter {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    margin-top: 10%;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 10px solid black;
+  }
+}
+@media screen and (max-width: 320px) {
+  .openFilter {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 240px) {
+  .filter {
+    padding: 0;
+  }
+
+  .openFilter {
+    width: 80%;
+    margin-top: 15%;
+  }
+}

@@ -1,0 +1,17 @@
+.cart {
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+.link {
+  margin-left: 40%;
+  height: 40px;
+  padding: 5px 10px;
+}
+@media screen and (max-width: 320px) {
+  .cart {
+    width: 100%;
+  }
+}

@@ -1,0 +1,307 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.img {
+  display: flex;
+  width: 40%;
+}
+.img img {
+  cursor: pointer;
+}
+.primary {
+  position: relative;
+}
+
+.primary img {
+  height: 500px;
+  width: 500px;
+}
+.primary span {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  transform: rotate(45deg);
+  background-color: #f00;
+  color: #fff;
+  padding: 5px 10px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  z-index: 1;
+}
+.normal {
+  max-height: 500px;
+  overflow: auto;
+}
+.normal img {
+  height: 100px;
+  width: 100px;
+  display: inline;
+}
+.intro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.infor {
+  width: 40%;
+  margin-left: 40px;
+  font-style: italic;
+}
+.choseInfo {
+  display: flex;
+  gap: 50px;
+}
+
+.all_option {
+  max-width: 400px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.optionChosed {
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  color: black;
+  font-style: italic;
+}
+
+.option {
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: black;
+}
+.name {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.price {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.682);
+  margin-bottom: 20px;
+}
+.des {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.682);
+  margin-bottom: 20px;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.handle {
+  border: none;
+  background-color: white;
+}
+.input {
+  width: 20px;
+  border: none;
+}
+
+.form {
+  border-style: solid;
+  border-width: 1px thin;
+  border-color: rgba(0, 0, 0, 0.368);
+  width: 319px;
+}
+
+.form span {
+  margin-right: 40px;
+  padding-left: 10px;
+  color: rgba(0, 0, 0, 0.368);
+}
+
+.submit {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.674);
+  border: none;
+  font-style: italic;
+  font-size: 15px;
+  padding: 0 20px;
+  margin: 0 0;
+  height: 32px;
+  margin-left: 10px;
+}
+.description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-style: italic;
+  text-align: left;
+}
+
+.description li {
+  list-style-type: none;
+}
+.title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.674);
+  width: fit-content;
+  height: 45px;
+  padding: 10px 20px 10px 20px;
+}
+
+.title1 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.title2 {
+  color: rgba(0, 0, 0, 0.682);
+  font-weight: 500;
+}
+
+.description li {
+  color: rgba(0, 0, 0, 0.682);
+  font-weight: 400;
+}
+
+.related ul {
+  padding: 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  overflow-x: auto;
+}
+
+.related ul li img {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.like {
+  cursor: pointer;
+}
+/* Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+  .intro {
+    display: grid;
+    gap: 20px;
+    justify-self: center;
+  }
+  .img {
+    width: 100%;
+  }
+
+  .infor {
+    width: 100%;
+  }
+
+  .related ul li img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .related ul {
+    max-width: 620px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .primary img {
+    height: 250px;
+    width: 250px;
+  }
+  .normal {
+    max-height: 250px;
+  }
+
+  .primary span {
+    font-size: 12px;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    transform: rotate(45deg);
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    z-index: 1;
+  }
+  .normal div {
+    width: 70px;
+  }
+  .normal img {
+    height: 70px;
+    width: 70px;
+    display: inline;
+  }
+  .infor {
+    margin-left: 0;
+  }
+  .related ul {
+    max-width: 380px;
+  }
+
+  .img {
+    gap: 0px;
+  }
+  .choseInfo {
+    gap: 20px;
+  }
+  .description ul {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .primary span {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    transform: rotate(45deg);
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    z-index: 1;
+  }
+
+  .normal img {
+    height: 70px;
+    width: 70px;
+    display: inline;
+  }
+  .infor {
+    width: 90%;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .primary img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .normal img {
+    height: 70px;
+    width: 70px;
+    display: inline;
+  }
+  .infor {
+    width: 200px;
+    margin-left: 10px;
+  }
+  .related ul {
+    max-width: 380px;
+  }
+
+  .form {
+    width: 200px;
+  }
+  .form button {
+    margin-top: 10px;
+  }
+}
